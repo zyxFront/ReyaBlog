@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+body{
+	background: #efefef;
+	font-family: "Microsoft YaHei",Arial,Helvetica,Sans-serif;
+}
+header{
+	height: 148px;
+	width: 100%;
+	background:#232323 url('../images/bg.jpg') center;
+	background-size: cover;
+	min-width: 960px;
+}
+.site-title{
+	height: 148px;
+	line-height: 148px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+}
+.site-title .blank{
+	width: 20px;
+    display: inline-block;
+    color:#4c1002 ;
+    font-size: 48px;
+}
+.site-title .left{
+	color: #f3782e;
+}
+.site-title .left::before{
+	content: url('../images/orange_queen_32.png');
+	width: 105px;
+	height: 27px;
+	display: inline-block;
+	transform:rotate(-48deg);
+}
+
+.site-title .right{
+	color: #036;
+}
+.site-title .right::after{
+	content: url('../images/blue_queen_32.png');
+	width: 105px;
+	height: 27px;
+	display: inline-block;
+	transform:rotate(48deg);
+}
+
+main{
+	width: 960px;
+	margin: 10px auto;
+	min-height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.main-left{
+	width: 640px;
+	float: left;
+}
+.article{
+	margin: 10px 0;
+	background: #fff;
+	padding: 25px;
+}
+.article>.title{
+	font-weight: 400;
+	font-size:20px; 
+	margin-bottom: 10px;
+}
+.article>.detail{
+	position: relative;
+	overflow: hidden;
+}
+.img-wrapper{
+	height: 200px;
+	padding: 2px;
+	border:1px solid #e2e2e2;
+	float: left;
+	margin-right: 16px;
+}
+.img-wrapper>img{
+	height: 194px;
+	float: left;
+	width: auto;
+}
+.intro p{
+	text-align: justify;
+	margin-bottom: 16px;
+	font-size: 14px;
+	line-height: 24px;
+	/* 多行溢出处理 */
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+}
+.intro a{
+	float: right;
+	padding-right: 15px;
+	color:#2472c1;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* 右边导航栏信息 */
+.main-right{
+	width: 300px;
+	float: right;
+}
+.main-right>aside{
+	margin-top:10px; 
+	min-height: 100px;
+	position: relative;
+	background: #fefefe ;
+	border: 1px solid #fff;
+}
+h3.aside_title{
+	font-weight: 400;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #666;
+	border-bottom: 1px solid #eae9e9;
+	padding: 0 10px;
+}
+
+/* start 文章推荐 */
+.recommend>ul{
+	margin: 0 10px 10px;
+}
+.recommend li{
+	background: url("../images/queen_32.png") no-repeat 4px 9px;
+	background-size: 13px 13px;
+	padding-left: 20px;
+	border-bottom: 1px solid #ededed;
+}
+.recommend li>a{
+	font-size: 14px;
+	line-height: 30px;
+	color: #777;
+}
+.recommend li>a:hover{
+	color: #2472c1;
+	padding-left: 10px
+}
+/* end 文章推荐 */
+
+/* start 每日小情话 */
+.whisper .content{
+	margin: 5px 10px;
+}
+.whisper p{
+	font-size: 14px;
+    line-height: 24px;
+    color: #777;
+}
+/* end 每日小情话 */
