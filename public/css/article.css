@@ -3,7 +3,7 @@
 .article{
 	background: #fff;
 	padding: 10px;
-	width: 960px;
+	width: 940px;
 }
 h2.article-title{
 	font-weight: 400;
@@ -45,11 +45,14 @@ h2.article-title{
 }
 
 .article-content{
-	margin: 12px auto;
+	margin: 12px;
 }
 .article-content p{
 	font-size: 15px;
 	line-height: 30px;
 	text-indent: 32px;
 	text-align: justify;
+}
+.article p+p{
+	margin-top: 10px;
 }

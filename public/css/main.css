@@ -49,7 +49,9 @@
 	font-weight: bold;
 	font-size: 14px;
 }
-
+.intro a:hover{
+	color: #036;
+}
 /* 右边导航栏信息 */
 .main-right{
 	width: 300px;
