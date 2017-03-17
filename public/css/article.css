@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+.article{
+	background: #fff;
+	padding: 10px;
+	width: 960px;
+}
+h2.article-title{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 48px;
+}
+.article-info{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #d3d7d9;
+}
+.article-info img{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	opacity: 0.6;
+}
+.article-info span{
+	line-height: 20px;
+	padding-right: 16px;
+	color: #787878;
+	font-size: 13px;
+}
+
+.article-info span.labels{
+	float: right;
+}
+.article-info span.labels a:not(:last-child)::after{
+	content: '';
+	margin-right: 8px;
+}
+.article-info span.labels a{
+	color: #787878;
+}
+.article-info span.labels a:hover{
+	color: #000;
+	font-size: 13px;
+}
+
+.article-content{
+	margin: 12px auto;
+}
+.article-content p{
+	font-size: 15px;
+	line-height: 30px;
+	text-indent: 32px;
+	text-align: justify;
+}

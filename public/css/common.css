@@ -1,0 +1,83 @@
+@charset 'utf-8';
+
+html,body{
+	height: 100%;
+}
+body{
+	background: #efefef;
+	font-family: "Microsoft YaHei",Arial,Helvetica,Sans-serif;
+}
+/* start 头部 */
+header{
+	height: 148px;
+	width: 100%;
+	background:#232323 url('../images/bg.jpg') center;
+	background-size: cover;
+	min-width: 960px;
+}
+.site-title{
+	height: 148px;
+	line-height: 148px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+}
+.site-title .blank{
+	width: 20px;
+    display: inline-block;
+    color:#4c1002 ;
+    font-size: 48px;
+}
+.site-title .left{
+	color: #f3782e;
+}
+.site-title .left::before{
+	content: url('../images/orange_queen_32.png');
+	width: 105px;
+	height: 27px;
+	display: inline-block;
+	transform:rotate(-48deg);
+}
+
+.site-title .right{
+	color: #036;
+}
+.site-title .right::after{
+	content: url('../images/blue_queen_32.png');
+	width: 105px;
+	height: 27px;
+	display: inline-block;
+	transform:rotate(48deg);
+}
+/* end 头部 */
+
+main{
+	width: 960px;
+	margin: 10px auto;
+	min-height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* start 底部 */
+footer{
+	height: 64px;
+	width: 100%;
+	background:#232323 url('../images/bg.jpg') center;
+	background-size: cover;
+	min-width: 960px;
+	position: relative;
+	bottom: 0;
+	padding: 12px 0;
+}
+footer p{
+	color: #4c1002;
+	text-align: center;
+	line-height: 24px;
+	font-size: 14px;
+}
+footer p.author{
+	font-size:12px;
+	line-height: 16px;
+}
+/* end 底部 */
