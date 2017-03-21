@@ -79,7 +79,7 @@ h3.aside_title{
 	margin: 0 10px 10px;
 }
 .recommend li{
-	background: url("../images/queen_32.png") no-repeat 4px 9px;
+	background: url("/static/images/queen_32.png") no-repeat 4px 9px;
 	background-size: 13px 13px;
 	padding-left: 20px;
 	border-bottom: 1px solid #ededed;

@@ -5,6 +5,7 @@ let logger  		= require('morgan');
 let cookieParser 	= require('cookie-parser');
 let bodyParser 		= require('body-parser');
 let compression 	= require('compression');
+let path 			= require('path');
 	
 let app 			= express();
 let config 			= require('./config');
@@ -15,11 +16,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cookieParser());
 
+// 设置静态文件路径
+app.use('/static',express.static(path.join(__dirname,'public')));
+
 // 路由器中间件
 app.use('/',require('./routes/base'));
-app.use('/hello',(req,res)=>{
-	res.send('suce');
-});
+
 // catch 404 and forward to error handler
 app.use(function(req,res,next){
 	let err = new Error('Not Found!');

@@ -11,7 +11,7 @@ body{
 header{
 	height: 148px;
 	width: 100%;
-	background:#232323 url('../images/bg.jpg') center;
+	background:#232323 url('/static/images/bg.jpg') center;
 	background-size: cover;
 	min-width: 960px;
 }
@@ -32,7 +32,7 @@ header{
 	color: #f3782e;
 }
 .site-title .left::before{
-	content: url('../images/orange_queen_32.png');
+	content: url('/static/images/orange_queen_32.png');
 	width: 105px;
 	height: 27px;
 	display: inline-block;
@@ -43,7 +43,7 @@ header{
 	color: #036;
 }
 .site-title .right::after{
-	content: url('../images/blue_queen_32.png');
+	content: url('/static/images/blue_queen_32.png');
 	width: 105px;
 	height: 27px;
 	display: inline-block;
@@ -63,7 +63,7 @@ main{
 footer{
 	height: 64px;
 	width: 100%;
-	background:#232323 url('../images/bg.jpg') center;
+	background:#232323 url('/static/images/bg.jpg') center;
 	background-size: cover;
 	min-width: 960px;
 	position: relative;

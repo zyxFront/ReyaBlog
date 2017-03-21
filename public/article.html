@@ -5,15 +5,15 @@
 	<link rel="shortcut icon" href="images/orange_queen_32.png" type="image/cnd.microsoft.icon">
 	<title>【声音江】解花语</title>
 	<meta name="author" content="reyazhang" />
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/article.css">
+	<link rel="stylesheet" href="/static/css/reset.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+	<link rel="stylesheet" href="/static/css/article.css">
 </head>
 <body>
 	<!-- 头部 -->
 	<header>
 		<h1 class="site-title">
-			<a href="index.html">
+			<a href="/">
 				<span class="left">文艺范</span>
 				<span class="blank">.</span>
 				<span class="right"> 技术控</span>
@@ -24,17 +24,17 @@
 	<main class="article">
 		<h2 class="article-title">【声音江】解花语</h2>
 		<div class="article-info">
-			<img src="images/orange/author_32.png" alt="作者" />
-			<span class="author">reya</span>
-			<img src="images/orange/time_32.png" alt="日期">
-			<span class="create_date">2017-03-17</span>
-			<img src="images/orange/browse_history_32.png" alt="浏览量">
-			<span class="page_view">1236</span>
+			<img src="/static/images/{{style}}/author_32.png" alt="作者" />
+			<span class="author">{{author}}</span>
+			<img src="/static/images/{{style}}/time_32.png" alt="日期">
+			<span class="create_date">{{createDate}}</span>
+			<img src="/static/images/{{style}}/browse_history_32.png" alt="浏览量">
+			<span class="page_view">{{browseHistory}}</span>
 			<span class="labels">
-				<img src="images/orange/label_32.png" alt="标签">
-				<a href="">生活</a>
-				<a href="">饮食</a>
-				<a href="">习惯</a>
+				<img src="/static/images/{{style}}/label_32.png" alt="标签">
+				{{#each labels}}
+				<a href="{{link}}">{{label}}</a>
+				{{/each}}
 			</span>
 		</div>
 		<div class="article-content">
