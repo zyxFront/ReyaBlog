@@ -1,0 +1,11 @@
+{
+	"articleId":"1234567", //需要设置一下articleId的展示形式
+	"title":"",			// string not null
+	"author":"reya",	// string not null
+	"createDate":"2017-03-17", //dateTime not null
+	"browseHistory":2017,  // int not null
+	"label":["",""], 
+	"imgBg":"",
+	"summary":"",
+	"content":"string"
+}
